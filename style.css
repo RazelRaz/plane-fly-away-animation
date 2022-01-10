@@ -1,0 +1,33 @@
+.airport {
+    background: url("images/runway.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pnane_box img {
+    position: relative;
+    right: -1339px;
+    top: 545px;
+    animation: fly 8s ease-in 0.8s infinite;
+    opacity: .8;
+  z-index: 99;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+
+@keyframes fly {
+    0% {
+        right: -1339px;
+    }
+    50% {
+        right: 880px;
+        /* transform: translate(300px, -350px); */
+    }
+    100% {
+        right: 7100px;
+        /* transform: translate(300px, -250px); */
+        transform: translate(1430px, -950px);
+    }
+}
